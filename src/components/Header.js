@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FacebookLogin from 'react-facebook-login';
 import logo from "../logoRM.png";
 
@@ -32,7 +32,7 @@ const Header = () => {
         }
         {login &&
           <div className="flex items-center mr-4">
-            <img src={picture} className="rounded mr-4" />
+            <img src={picture} alt={data.name} className="rounded mr-4" />
             <p>{data.name}</p>
           </div>
         }
